@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="studentDataheading">Student Data !</h1>
+    <div class="mainLoginDiv">
+      <div class="loginDiv">
+        <form action="" onsubmit="checkOnSubmit(event)">
+          <input
+            type="text"
+            placeholder="Enter username"
+            id="username"
+            onInput="inValidUserName(event)"
+          />
+          <span></span>
+          <input
+            type="password"
+            placeholder="Enter password"
+            id="password"
+            onInput="inValidPassword(event)"
+          />
+          <span></span>
+          <input
+            type="email"
+            placeholder="Enter gmail"
+            id="email"
+            onInput="inValidEmail(event)"
+          />
+          <span></span>
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
+
+    <div class="mainDiv">
+      <div class="correctDiv">
+        <h1 id="studentNameDisplay"></h1>
+        <h1 id="passwordNameDisplay"></h1>
+        <h1 id="emailNameDisplay"></h1>
+        <div id="error"></div>
+      </div>
+    </div>
+
+    <script src="Script.js"></script>
+  </body>
+</html>

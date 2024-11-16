@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif; 
+}
+
+h1{
+    text-align: center;
+    font-size: 28px;
+}
+.studentDataheading{
+    font-size: 50px;
+}
+span{
+    display: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    font-size: 30px;
+}
+.loginDiv{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+.mainLoginDiv{
+    display: flex;
+    justify-content: center;
+}
+.mainDiv{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.correctDiv{
+    display: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+}
+
