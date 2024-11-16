@@ -71,7 +71,7 @@ function checkOnSubmit(e) {
     }
   }
   if (!found) {
-    correctDiv.style.display = "flex";
-    errorDiv.innerHTML = `Not found!`;
+    correctDiv.style.display = "none";
+    errorDiv.innerHTML = `<h1>Data not found !</h1>`;
   }
 }
