@@ -3,6 +3,13 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: "Poppins", sans-serif; 
+
+    align-items: center;
+    background-image: url(pics/backgroundBig.jpg);
+    background-size: cover;
+    background-position: right; 
+    width: 100%; 
+    height:95vh; 
 }
 
 h1{
@@ -11,9 +18,11 @@ h1{
 }
 .studentDataheading{
     font-size: 50px;
+    color: white;
 }
 span{
     display: none;
+    color: white;
 }
 form{
     display: flex;
@@ -24,7 +33,7 @@ input{
     font-size: 30px;
 }
 .loginDiv{
-    border: 1px solid black;
+    border: 3px solid white;
     display: flex;
     justify-content: center;
     padding: 20px 15px;
@@ -41,11 +50,28 @@ input{
 }
 .correctDiv{
     display: none;
-    border: 1px solid black;
+    border: 3px solid white;
     border-radius: 10px;
     width: 50%;
     justify-content: center;
     flex-direction: column;
 }
-
+@media (max-width: 868px) {
+    h1{
+        font-size: 20px;
+    }
+    }
+    @media (max-width: 613px) {
+        h1{
+            font-size: 15px;
+        }
+        input{
+            font-size: 20px;
+        }
+        }
+        @media (max-width: 443px) {
+            h1{
+                font-size: 10px;
+            }
+            }
 
