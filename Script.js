@@ -7,9 +7,13 @@ function inValidEmail(e) {
   let inputElement = e.target;
   let spanElement = inputElement.nextElementSibling;
   let username = inputElement.value;
-  if (username.length < 10) {
+  if (
+    username.indexOf("@") === -1 ||
+    username.indexOf(".") === -1 ||
+    username.length <= username.indexOf(".") + 2
+  ) {
     spanElement.style.display = "block";
-    spanElement.innerText = "Make sure to enter the correct email !";
+    spanElement.innerText = "Make sure to enter the correct email format !";
     return;
   }
   spanElement.style.display = "none";
